@@ -8,7 +8,7 @@ import {
   TodoitemBox,
   TodoitemText,
   Header
-} from "../shared";
+} from "./shared";
 import {
   Modal,
   ModalHeader,
@@ -16,7 +16,7 @@ import {
   ModalFooter,
   List,
   Input
-} from "../lib";
+} from "./lib";
 import {
   useTodoReducer,
   useFormStateReducer,
@@ -25,9 +25,9 @@ import {
   FORM_STATE,
   DELETE_TODO,
   TOGGLE_TODO
-} from "../hooks";
+} from "./hooks";
 
-import { getnextTodoId } from "../utils";
+import { getnextTodoId } from "./utils";
 
 export default function App() {
   const { todos, dispatch } = useTodoReducer();
